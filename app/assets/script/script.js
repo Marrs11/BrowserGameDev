@@ -1,11 +1,17 @@
+var name;
+var health;
+var playerDamage;
+var damageAmount;
+
 class Player {
-	constructor (var health, var name){
+
+	constructor (name, health){
 		this.health = 100;
 		this.name = "Steve";
 	}
 
-	var damagePlayer (var damageAmount){
-		health = health - damageAmount;
-		return health
-	}	
+	playerDamage = (damageAmount){
+    health -= damageAmount;
+    return health;
+	};
 }
