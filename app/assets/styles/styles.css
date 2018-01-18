@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #2d2d2f;
+    font-family: 'Roboto', sans-serif;
+    min-height: 2000px;
+}
+
+
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+
+    width: 100%;
+}
+
+#mainContainer{
+    margin-top: 60px;
+}
+
+h1 {
+    color: azure;
+    text-align: center;
+}
