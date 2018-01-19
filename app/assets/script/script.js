@@ -6,8 +6,14 @@
     var damage;
     damage = 20;
 
+    document.getElementById('my-health').innerHTML += health + '<br/>'; //prints the value
+
     $("#pushThisButton").click(function () {
-        document.write (health - damage); //prints the value
+        document.getElementById('my-damage').innerHTML += damage; //prints the value
+    });
+
+    $("#pushThisButton").click(function () {
+        document.getElementById('my-output').innerHTML += health - damage; //prints the value
     });
 
 
