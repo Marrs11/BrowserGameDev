@@ -1,19 +1,16 @@
-var name;
-var health;
-var playerDamage;
-var damageAmount;
+(function (global, $) {
 
-class Player {
+    var health;
+    health = 100;
 
-	constructor (name, health){
-        _name = name;
-        this.health = health;
-        this.health = 100;
-		this.name = "Steve";
-	}
+    var damage;
+    damage = 20;
 
-	playerDamage = (damageAmount){
-    health -= damageAmount;
-    return health;
-	};;;;
-}
+    $("#pushThisButton").click(function () {
+        document.write (health - damage); //prints the value
+    });
+
+
+
+
+}(window, jQuery));
