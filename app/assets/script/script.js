@@ -16,11 +16,17 @@
     });
 
     $("#pushThisButton").click(function () {
+<<<<<<< HEAD
       health = health - damage
   document.getElementById('my-output').innerHTML += health; //prints the value
       if(health < 0){
         alert("GAME OVER, YOU LOSE !");
       }
+=======
+        health = health - damage
+        document.getElementById('my-output').innerHTML += health; //prints the value
+
+>>>>>>> 83b23b2215d7b56f1574be5787ff44cff6f3f222
     });
 
     /*$("#useMedKit").click(function () {
