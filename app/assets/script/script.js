@@ -1,5 +1,5 @@
 (function (global, $) {
-
+    var newHealth;
     var health;
     health = 100;
 
@@ -16,7 +16,9 @@
     });
 
     $("#pushThisButton").click(function () {
-        document.getElementById('my-output').innerHTML += health - damage; //prints the value
+      health = health - damage
+      document.getElementById('my-output').innerHTML += health; //prints the value
+
     });
 
     /*$("#useMedKit").click(function () {
