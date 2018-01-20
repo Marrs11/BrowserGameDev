@@ -17,8 +17,10 @@
 
     $("#pushThisButton").click(function () {
       health = health - damage
-      document.getElementById('my-output').innerHTML += health; //prints the value
-
+  document.getElementById('my-output').innerHTML += health; //prints the value
+      if(health < 0){
+        alert("GAME OVER, YOU LOSE !");
+      }
     });
 
     /*$("#useMedKit").click(function () {
