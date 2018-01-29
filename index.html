@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="app/assets/styles/bootstrap.css">
     <link rel="stylesheet" href="app/assets/styles/styles.css">
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700&amp;subset=cyrillic-ext" rel="stylesheet">
 </head>
 <body>
@@ -39,21 +41,19 @@
     </nav>
     <div id="mainContainer">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Title Here</h1>
-                    <button id='my-health'>Health: </button>
-                    <input type="button" id="pushThisButton" value="DO SOME DAMAGE!" />
-                    <button id="my-damage">Damage Done: </button>
-                    <button id='my-output'>New Health: </button>
-                    <!--<input type="button" id="useMedKit" value="DO SOME DAMAGE!" />
-                    <p>New Health: </p><div id='my-heal'></div>-->
-
+            <h2 class="text-center">Health</h2>
+            <div class="progress">
+                <div id="healthId" class="progress-bar progress-bar-danger bg-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                    <p id="currentHealth"></p>
                 </div>
             </div>
+            <button id="attackBtn" onclick="attackHealth()">Attack</button>
+            <button id="healBtn" onclick="healHealth()">Heal</button>
+            <button id="reviveBtn" onclick="revivePlayer()">Revive</button>
+            <button id="medKits" onclick="healHealth()" class=""><i class="fa fa-medkit" aria-hidden="true"><span id='medKitsAvailable'>5</span></i>
+            </button>
+
         </div>
-
-
     </div>
 
 
