@@ -26,3 +26,41 @@ h1 {
     color: azure;
     text-align: center;
 }
+
+button{
+    margin: 30px 30px 0 0;
+}
+
+#attackBtn{
+    border: none;
+    border-radius:5px;
+    background-color: #a94442;
+    color: #daeeff;
+}
+
+
+#healBtn{
+    border: none;
+    border-radius:5px;
+    background-color: #3c763d;
+    color: #daeeff;
+}
+
+
+#reviveBtn{
+    border: none;
+    border-radius:5px;
+    background-color: #ec971f;
+    color: #daeeff;
+}
+
+#medKits{
+    border: none;
+    border-radius:5px;
+    background-color: #daeeff;
+    color: #a94442;
+}
+
+.fa{
+    padding: 0 5px 0 5px;
+}
